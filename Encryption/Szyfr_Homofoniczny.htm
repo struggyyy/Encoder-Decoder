@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Szyfr Homofoniczny</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='Home.html'">Zmień Szyfr</button>
+
+        <!-- Encoding Layout -->
+        <div class="encoding">
+            <h1>Szyfr Homofoniczny</h1>
+            <label for="inputTextEncode">Tekst do zakodowania:</label>
+            <textarea id="inputTextEncode" placeholder="Wprowadź tekst"></textarea><br>
+
+            <button onclick="encodeHomofoniczny()">Kodowanie</button>
+
+            <label for="outputTextEncode">Wynik kodowania:</label>
+            <textarea id="outputTextEncode" placeholder="Wynik" readonly></textarea>
+        </div>
+
+        <!-- Decoding Layout -->
+        <div class="decoding">
+            <label for="inputTextDecode">Tekst do dekodowania:</label>
+            <textarea id="inputTextDecode" placeholder="Wprowadź tekst"></textarea><br>
+
+            <button onclick="decodeHomofoniczny()">Dekodowanie</button>
+
+            <label for="outputTextDecode">Wynik dekodowania:</label>
+            <textarea id="outputTextDecode" placeholder="Wynik" readonly></textarea>
+        </div>
+
+        <script src="scripts.js"></script>
+    </div>
+</body>
+</html>
+

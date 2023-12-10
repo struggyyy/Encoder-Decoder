@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Szyfr Vigenère'a</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='Home.html'">Zmień Szyfr</button>
+
+        <!-- Encoding Layout -->
+        <div class="encoding">
+            <h1>Szyfr Vigenère'a</h1>
+            <label for="inputTextEncode">Tekst do zakodowania:</label>
+            <textarea id="inputTextEncode" placeholder="Wprowadź tekst"></textarea><br>
+
+            <label for="vigenerKeyEncode">Klucz Vigenère'a:</label>
+            <input type="text" id="vigenerKeyEncode" placeholder="Wprowadź klucz" />
+            <button onclick="encodeVigener()">Kodowanie</button>
+
+            <label for="outputTextEncode">Wynik kodowania:</label>
+            <textarea id="outputTextEncode" placeholder="Wynik"></textarea>
+        </div>
+
+        <!-- Decoding Layout -->
+        <div class="decoding">
+            <label for="inputTextDecode">Tekst do dekodowania:</label>
+            <textarea id="inputTextDecode" placeholder="Wprowadź tekst"></textarea><br>
+
+            <label for="vigenerKeyDecode">Klucz Vigenère'a:</label>
+            <input type="text" id="vigenerKeyDecode" placeholder="Wprowadź klucz" />
+            <button onclick="decodeVigener()">Dekodowanie</button>
+
+            <label for="outputTextDecode">Wynik dekodowania:</label>
+            <textarea id="outputTextDecode" placeholder="Wynik"></textarea>
+        </div>
+
+        <script src="scripts.js"></script>
+    </div>
+</body>
+</html>
