@@ -281,7 +281,7 @@ function encodeVigener() {
     let vigenerKeyEncode = document.getElementById("vigenerKeyEncode").value.toUpperCase();
 
     if (!vigenerKeyEncode) {
-        alert("Wprowadź klucz aby kontynuować");
+        alert("Wprowadź klucz aby kontynuować!");
         return;
     }
 
@@ -373,7 +373,7 @@ function generatePlayfairMatrix(key) {
 
 function processPlayfair(inputText, key, encode = true) {
     if (key.length === 0) {
-        alert("Wprowadź klucz Playfaira.");
+        alert("Wprowadź klucz aby kontynuować!");
         return;
     }
 
